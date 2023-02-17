@@ -15,3 +15,9 @@
     padding: 14px 32px ;
   }
 }
+
+@layer utilities {
+  .container {
+    @apply max-[480px]:px-[20px]
+  }
+}

@@ -54,27 +54,27 @@ import '../index.css'
           src='/homepage/uhub-logo.png'
         />
         <a
-          class='link hidden md:visible'
+          class='link hidden md:inline-block'
           href='/'
           >ивенты</a
         >
         <a
-          class='link'
+          class='link hidden md:inline-block'
           href='/'
           >джобс</a
         >
         <a
-          class='link hidden md:visible'
+          class='link hidden md:inline-block'
           href='/'
           >startup alley</a
         >
         <a
-          class='link hidden md:visible'
+          class='link hidden md:inline-block'
           href='/'
           >блог</a
         >
         <a
-          class='link'
+          class='link hidden md:inline-block'
           href='/'
           >партнерам</a
         >
@@ -176,7 +176,7 @@ import '../index.css'
       </div>
 
       <!-- screen -->
-      <div class="sm:flex">
+      <div class="xs:flex">
         <div>
           <div>
             <h2 class='text-[80px] leading-none inline-block'>
@@ -225,17 +225,17 @@ import '../index.css'
       </div>
 
       <!-- screen -->
-    <div class='container mx-auto'>
+    <div class='container mx-auto mt-[200px]'>
       <div>
-        <h2 class='text-[80px] inline-block mr-8'>
+        <h2 class='text-[80px] leading-none inline-block mr-8'>
           Кто уже с нами
         </h2>
-        <span class='text-[32px]'>
+        <span class='text-[32px] inline-block'>
         /кома́нда/
         </span>
       </div>
 
-      <div class='flex justify-between content-center py-[30px]'>
+      <div class='grid justify-between content-center py-[30px]  grid-cols-3 '>
         <img class='w-[110px] inline-block' src="/homepage/Houmly.svg" />
         <img class='w-[110px] inline-block'  src="/homepage/Skich.svg" />
         <img class='w-[110px] inline-block'  src="/homepage/scoot-api.svg" />
@@ -256,56 +256,58 @@ import '../index.css'
 
       <!-- footer -->
 
-      <div class='mt-8 flex content-center justify-between flex-wrap items-center  '>
+      <div class='mt-[60px] flex content-center items-center gap-[32px] '>
         <img
           class='h-[100px] inline-block'
           src='/homepage/uhub-logo.png'
         />
-        <a
-          class='link'
-          href='/'
-          >ивенты</a
-        >
-        <a
-          class='link'
-          href='/'
-          >джобс</a
-        >
-        <a
-          class='link'
-          href='/'
-          >блог</a
-        >
-        <a
-          class='link'
-          href='/'
-          >партнерам</a
-        >
-        <a
-          class='link'
-          href='/'
-          >faq</a
-        >
-        <a
-          class='link'
-          href='/'
-          >terms of use</a
-        >
-        <a
-          class='link'
-          href='/'
-          >privacy policy</a
-        >
-        <a
-          class='link'
-          href='/'cs
-          >gdpr</a
-        >
-        <a
-          class='link'
-          href='/'
-          >ивенты</a
-        >
+        <div class='grid content-center justify-between flex-wrap items-center gap-4 grid-cols-3'>
+          <a
+            class='link'
+            href='/'
+            >ивенты</a
+          >
+          <a
+            class='link'
+            href='/'
+            >джобс</a
+          >
+          <a
+            class='link'
+            href='/'
+            >блог</a
+          >
+          <a
+            class='link'
+            href='/'
+            >партнерам</a
+          >
+          <a
+            class='link'
+            href='/'
+            >faq</a
+          >
+          <a
+            class='link'
+            href='/'
+            >terms of use</a
+          >
+          <a
+            class='link'
+            href='/'
+            >privacy policy</a
+          >
+          <a
+            class='link'
+            href='/'cs
+            >gdpr</a
+          >
+          <a
+            class='link'
+            href='/'
+            >ивенты</a
+          >
+        </div>
       </div>
       <div class='text-center my-8 fonx-[18px] opacity-50'>
         ©Copyright 2022
