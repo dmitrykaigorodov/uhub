@@ -1,15 +1,220 @@
 ---
+import '../index.css'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link
+      rel='icon'
+      type='image/svg+xml'
+      href='/favicon.svg'
+    />
+    <meta
+      name='viewport'
+      content='width=device-width'
+    />
+
+    <link
+      rel='preconnect'
+      href='https://fonts.googleapis.com'
+    />
+    <link
+      rel='preconnect'
+      href='https://fonts.gstatic.com'
+      crossorigin
+    />
+    <!-- 
+    Alternative to Futura font: https://fontsplugin.com/google-fonts-futura/
+    -->
+    <link
+      href='https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Space+Grotesk:wght@500&display=swap'
+      rel='stylesheet'
+    />
+
+    <style>
+      .border-black {
+        border: 1px solid black;
+      }
+      .shadow-hard {
+        box-shadow: 8px 8px 0 #000000;
+      }
+      .shadow-strike {
+        box-shadow: 8px 8px 0 -1px #fff, 8px 8px 0 #000000;
+      }
+    </style>
+
+    <title>Ū Hub</title>
+  </head>
+  <body>
+    <div class='container mx-auto'>
+      <img
+        class='h-[100px] inline-block'
+        src='/homepage/uhub-logo.png'
+      />
+      <a
+        class='link'
+        href='/'
+        >ивенты</a
+      >
+      <a
+        class='link'
+        href='/'
+        >джобс</a
+      >
+      <a
+        class='link'
+        href='/'
+        >startup alley</a
+      >
+      <a
+        class='link'
+        href='/'
+        >блог</a
+      >
+      <a
+        class='link'
+        href='/'
+        >партнерам</a
+      >
+      <a
+        class='link'
+        href='/'
+        >фак</a
+      >
+      <a
+        class='link'
+        href='/'
+        >контакты</a
+      >
+      <a
+        class='button border-black shadow-hard ml-8'
+        accesskey=''
+        href='/'
+        >присоединиться к Ū hub</a
+      >
+      <div class='flex'>
+        <div>
+          <h1 class='text-[128px]'>Ū HUB</h1>
+          <span class='text-xl'>
+            <span class='mr-8'>/уха́б/</span>
+            <span>дом беларуских стартапов в Польше</span>
+          </span>
+          <div>
+            <a
+              href='/'
+              class='button bg-black text-white shadow-strike mr-8 mb-6'
+            >
+              присоединиться к Ū hub
+            </a>
+            <a
+              href='/'
+              class='button border-black shadow-hard'
+            >
+              cтать партнером
+            </a>
+          </div>
+        </div>
+        <div>
+          <img src='/homepage/worker.svg' />
+        </div>
+      </div>
+
+      <!-- photo from the last event -->
+      <div class='mt-[256px]'>
+        <img src='/homepage/Photo.png' />
+      </div>
+
+      <!-- screen -->
+      <div class='flex mt-[256px]'>
+        <div>
+          <img src='/homepage/Workspace.svg' />
+        </div>
+        <div>
+          <div>
+            <h1 class='text-[80px]'>
+              кто мы?
+              <span class='text-[32px] ml-4'>/ктó/</span>
+            </h1>
+            <div class='flex gap-8 mb-8'>
+              <div class='leading-[1.80] inline-block align-top opacity-25'>
+                41% <br/>
+                36%<br/>
+                10%<br/>
+                10%<br/>
+                3%<br/>
+              </div>
+
+              <img 
+                src='/homepage/arrow.svg' 
+                class='inline-block h-[9em] align-top'
+                />
+
+              <div class='leading-[1.80] inline-block align-top' >
+                Стартапы <br/>
+                Работники IT-сферы <br/>
+                Владельцы нетехнологического бизнеса <br/>
+                Работники стартапов <br/>
+                Просто тусовщики <br/>
+              </div>
+            </div>
+            <a href='/' class='button shadow-hard border-black'>
+              присоединиться к нам
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- screen -->
+      <div class="flex">
+        <div>
+          <div>
+            <h1 class='text-[80px] inline-block'>
+              Что мы делаем?
+            </h1>
+            <span class='text-[32px]'>
+            /за́чем/
+            </span>
+         </div>
+
+          <span class="text-[#E11E2C] font-[14px]">[01]</span>
+          <div class=''>
+            <h3 class="capitalize text-[32px] my-[20px]">
+              Делимся экспертизой
+            </h3>
+            <p class='text-[24px]'>
+              единомышленников и помогаем находить людей к себе в команду
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <img src='/homepage/Woman.svg' />
+        </div>
+      </div>
+    </div><!-- end container -->
+
+      <!-- screen -->
+      <div class='flex gap-[32px] overflow-hidden'>
+        <img 
+          src="/homepage/Photo-0.png"
+          class="h-[440px]"
+          />
+        <img 
+          src="/homepage/Photo-3.png"
+          class="h-[440px]"
+          />
+        <img 
+          src="/homepage/Photo-4.png"
+          class="h-[440px]"
+          />
+        <img 
+          src="/homepage/Photo-5.png"
+          class="h-[440px]"
+          />
+      </div>
+
+    <div class='container mx-auto'>
+    </div>
+  </body>
 </html>
