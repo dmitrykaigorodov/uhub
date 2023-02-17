@@ -47,60 +47,66 @@ import '../index.css'
     <title>Ū Hub</title>
   </head>
   <body>
-    <div class='container mx-auto'>
-      <img
-        class='h-[100px] inline-block'
-        src='/homepage/uhub-logo.png'
-      />
-      <a
-        class='link'
-        href='/'
-        >ивенты</a
-      >
-      <a
-        class='link'
-        href='/'
-        >джобс</a
-      >
-      <a
-        class='link'
-        href='/'
-        >startup alley</a
-      >
-      <a
-        class='link'
-        href='/'
-        >блог</a
-      >
-      <a
-        class='link'
-        href='/'
-        >партнерам</a
-      >
-      <a
-        class='link'
-        href='/'
-        >фак</a
-      >
-      <a
-        class='link'
-        href='/'
-        >контакты</a
-      >
-      <a
-        class='button border-black shadow-hard ml-8'
-        accesskey=''
-        href='/'
-        >присоединиться к Ū hub</a
-      >
-      <div class='flex'>
-        <div>
-          <h1 class='text-[128px]'>Ū HUB</h1>
+    <div class='container mx-auto '>
+      <div class='flex justify-between items-center '>
+        <img
+          class='h-[100px] inline-block'
+          src='/homepage/uhub-logo.png'
+        />
+        <a
+          class='link hidden md:visible'
+          href='/'
+          >ивенты</a
+        >
+        <a
+          class='link'
+          href='/'
+          >джобс</a
+        >
+        <a
+          class='link hidden md:visible'
+          href='/'
+          >startup alley</a
+        >
+        <a
+          class='link hidden md:visible'
+          href='/'
+          >блог</a
+        >
+        <a
+          class='link'
+          href='/'
+          >партнерам</a
+        >
+        <a
+          class='link hidden md:visible'
+          href='/'
+          >фак</a
+        >
+        <a
+          class='link'
+          href='/'
+          >контакты</a
+        >
+        <a
+          class='button border-black shadow-hard '
+          accesskey=''
+          href='/'
+          >присоединиться к Ū hub</a
+        >
+      </div>
+
+
+      <div class='md:flex md:gap-[32px]'>
+        <div class="shrink">
+          <h1 class='text-[80px]  md:text-[80px] lg:text-[128px] inline-block'>Ū HUB</h1>
           <span class='text-xl'>
-            <span class='mr-8'>/уха́б/</span>
-            <span>дом беларуских стартапов в Польше</span>
+            <span class='mr-8 inline-block'>/уха́б/</span>
           </span>
-          <div>
+          <p class='text-xl'>
+            дом беларуских стартапов в Польше
+          </p>
+          <div class='pt-[60px]'>
             <a
               href='/'
               class='button bg-black text-white shadow-strike mr-8 mb-6'
@@ -115,8 +121,10 @@ import '../index.css'
             </a>
           </div>
         </div>
-        <div>
-          <img src='/homepage/worker.svg' />
+        <div class="shrink">
+          <img 
+            class="mr-[-40px]"
+            src='/homepage/worker.svg' />
         </div>
       </div>
 
@@ -126,16 +134,18 @@ import '../index.css'
       </div>
 
       <!-- screen -->
-      <div class='flex mt-[256px]'>
+      <div class='sm:flex mt-[256px]'>
         <div>
           <img src='/homepage/Workspace.svg' />
         </div>
         <div>
           <div>
-            <h1 class='text-[80px]'>
-              кто мы?
-              <span class='text-[32px] ml-4'>/ктó/</span>
-            </h1>
+            <div class='mb-8'>
+              <h1 class='text-[80px] leading-none inline-block mr-4' >
+                кто мы?
+              </h1>
+              <span class='text-[32px]'>/ктó/</span>
+          </div>
             <div class='flex gap-8 mb-8'>
               <div class='leading-[1.80] inline-block align-top opacity-25'>
                 41% <br/>
@@ -166,12 +176,12 @@ import '../index.css'
       </div>
 
       <!-- screen -->
-      <div class="flex">
+      <div class="sm:flex">
         <div>
           <div>
-            <h1 class='text-[80px] inline-block'>
+            <h2 class='text-[80px] leading-none inline-block'>
               Что мы делаем?
-            </h1>
+            </h2>
             <span class='text-[32px]'>
             /за́чем/
             </span>
@@ -198,23 +208,108 @@ import '../index.css'
       <div class='flex gap-[32px] overflow-hidden'>
         <img 
           src="/homepage/Photo-0.png"
-          class="h-[440px]"
+          class="h-[200px] sm:h-[240px] md-[300px] lg:h-[340px] xl:h-[440px]"
           />
         <img 
           src="/homepage/Photo-3.png"
-          class="h-[440px]"
+          class="h-[200px] sm:h-[240px] md-[300px] lg:h-[340px] xl:h-[440px]"
           />
         <img 
           src="/homepage/Photo-4.png"
-          class="h-[440px]"
+          class="h-[200px] sm:h-[240px] md-[300px] lg:h-[340px] xl:h-[440px]"
           />
         <img 
           src="/homepage/Photo-5.png"
-          class="h-[440px]"
+          class="h-[200px] sm:h-[240px] md-[300px] lg:h-[340px] xl:h-[440px]"
           />
       </div>
 
+      <!-- screen -->
     <div class='container mx-auto'>
+      <div>
+        <h2 class='text-[80px] inline-block mr-8'>
+          Кто уже с нами
+        </h2>
+        <span class='text-[32px]'>
+        /кома́нда/
+        </span>
+      </div>
+
+      <div class='flex justify-between content-center py-[30px]'>
+        <img class='w-[110px] inline-block' src="/homepage/Houmly.svg" />
+        <img class='w-[110px] inline-block'  src="/homepage/Skich.svg" />
+        <img class='w-[110px] inline-block'  src="/homepage/scoot-api.svg" />
+        <img class='w-[110px] inline-block'  src="/homepage/weatherwell_symbol.svg" />
+        <img class='w-[110px] inline-block'  src="/homepage/Lingvanex-Translator.svg" />
+        <img class='w-[110px] inline-block'  src="/homepage/LOGO x dark background.svg" />
+      </div>
+
+      <div>
+        <a
+          class='button border-black shadow-hard '
+          accesskey=''
+          href='/'
+          >присоединиться к Ū hub</a
+        >
+      </div>
+
+
+      <!-- footer -->
+
+      <div class='mt-8 flex content-center justify-between flex-wrap items-center  '>
+        <img
+          class='h-[100px] inline-block'
+          src='/homepage/uhub-logo.png'
+        />
+        <a
+          class='link'
+          href='/'
+          >ивенты</a
+        >
+        <a
+          class='link'
+          href='/'
+          >джобс</a
+        >
+        <a
+          class='link'
+          href='/'
+          >блог</a
+        >
+        <a
+          class='link'
+          href='/'
+          >партнерам</a
+        >
+        <a
+          class='link'
+          href='/'
+          >faq</a
+        >
+        <a
+          class='link'
+          href='/'
+          >terms of use</a
+        >
+        <a
+          class='link'
+          href='/'
+          >privacy policy</a
+        >
+        <a
+          class='link'
+          href='/'cs
+          >gdpr</a
+        >
+        <a
+          class='link'
+          href='/'
+          >ивенты</a
+        >
+      </div>
+      <div class='text-center my-8 fonx-[18px] opacity-50'>
+        ©Copyright 2022
+      </div>
     </div>
   </body>
 </html>

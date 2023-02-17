@@ -7,6 +7,9 @@
   .link {
     @apply mx-3 text-[20px] leading-[1.4]
   }
+  .link:hover {
+    @apply text-[#333]
+  }
   .button {
     @apply text-[20px] leading-[1.4] inline-block;
     padding: 14px 32px ;
