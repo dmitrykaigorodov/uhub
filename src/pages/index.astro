@@ -97,7 +97,7 @@ import '../index.css'
           >фак</a
         >
         <a
-          class='link'
+          class='link hidden md:md:inline-block'
           href='/'
           >контакты</a
         >
@@ -105,22 +105,23 @@ import '../index.css'
           class='button button-small border-black shadow-hard'
           accesskey=''
           href='/'
-          >присоединиться к Ū hub</a
+          >присоединиться
+          <span class='hidden min-[425px]:inline-block'>{' '}к Ū hub</span></a
         >
       </div>
 
       <div class='md:flex md:gap-[32px]'>
-        <div class='grow w-[100%] xl:pt-[198px]'>
+        <div class='grow w-[100%] pt-[100px] xl:pt-[198px]'>
           <h1
             class='text-[80px] md:text-[80px] lg:text-[128px] leading-none inline-block font-semibold'
           >
             Ū HUB
           </h1>
-          <div class='text-[32px] leading-[1.4] pt-[16px]'>
+          <div class='text-[24px] md:text-[32px] leading-[1.4] pt-[16px]'>
             <span class='mr-8 inline-block'>/уха́б/</span>
             <span class=''>дом беларуских стартапов в Польше</span>
           </div>
-          <div class='xl:pt-[80px]'>
+          <div class='pt-[64px] md:pt-[80px]'>
             <a
               href='/'
               class='button bg-black text-white shadow-strike mr-[34px] mb-[32px]'
@@ -144,24 +145,22 @@ import '../index.css'
       </div>
 
       <!-- photo from the last event -->
-      <div class='mt-[200px]'>
+      <div class='mt-[100px] md:mt-[200px]'>
         <img src='/homepage/Photo.png' />
       </div>
 
       <!-- screen -->
-      <div class='sm:flex gap-[32px] mt-[200px]'>
+      <div class='sm:flex gap-[32px] mt-[100px] md:mt-[200px]'>
         <div class='grow w-[100%]'>
           <img src='/homepage/Workspace.svg' />
         </div>
         <div class='grow w-[100%]'>
           <div>
-            <div class='mb-[64px] pt-[56px]'>
-              <h2 class='text-[80px] leading-none inline-block mr-4'>
-                кто мы?
-              </h2>
-              <span class='text-[32px]'>/ктó/</span>
+            <div class='mb-[64px] md:pt-[56px]'>
+              <h2 class='leading-none inline-block mr-4'>кто мы?</h2>
+              <span class='text-[32px] inline-block'>/ктó/</span>
             </div>
-            <div class='flex text-[28px] mb-[61px]'>
+            <div class='flex text-[20px] md:text-[28px] mb-[61px]'>
               <div class='leading-[1.80] inline-block align-top opacity-25'>
                 41% <br />
                 36%<br />
@@ -170,10 +169,10 @@ import '../index.css'
                 3%<br />
               </div>
 
-              <div class='px-[44px] align-top pt-[16px]'>
+              <div class='pl-[12px] pr-[20px] align-top md:pt-[16px]'>
                 <img
                   src='/homepage/arrow.svg'
-                  class='inline-block align-top w-[20px] h-[225px]'
+                  class='inline-block align-top w-[25px] md:h-[225px]'
                 />
               </div>
 
@@ -196,52 +195,77 @@ import '../index.css'
       </div>
 
       <!-- screen -->
-      <div class='grid grid-cols-3 gap-[32px] mt-[141px]'>
-        <div class='pt-[177px] pb-[29px] col-span-2'>
-          <h2 class='text-[80px] leading-none inline-block'>Что мы делаем?</h2>
-          <span class='text-[32px]'> /за́чем/</span>
+      <div
+        class='md:grid md:grid-cols-2 lg:grid-cols-3 gap-[32px] mt-[141px] overflow-'
+      >
+        <div class='md:pt-[177px] md:pb-[29px] col-span-2'>
+          <h2 class='inline-block'>Что мы делаем?</h2>
+          <span class='text-[32px] inline-block'> /за́чем/</span>
         </div>
-        <div class='row-span-3'>
+        <div class='hidden md:block lg:hidden'></div>
+        <div class='md:row-span-4'>
           <img
-            class='mr-[-177px] ml-[-67px] mb-[-100px] w-[660px] max-w-max'
+            class='lg:mr-[-177px] lg:ml-[-67px] lg:mb-[-100px] lg:w-[660px] lg:max-w-max'
             src='/homepage/Woman.svg'
           />
         </div>
 
-        <div class='pb-[4px]'>
-          <span class='text-[#E11E2C] text-[14px] leading-[20px] font-'
-            >[01]</span
+        <div class='pb-[32px] md:pb-[4px]'>
+          <span class='text-[#E11E2C] text-[14px] leading-[20px] font-light'>
+            [01]
+          </span>
+          <h3
+            class='text-[24px] md:text-[32px] leading-none my-[10px] md:my-[20px]'
           >
-          <h3 class='text-[32px] leading-[32px] my-[20px]'>
             Делимся экспертизой
           </h3>
-          <p class='text-[24px] leading-[29px]'>
+          <p class='text-[20px] md:text-[24px] md:leading-[1.2]'>
             единомышленников и помогаем находить людей к себе в команду
           </p>
         </div>
-        <div class='pb-[4px]'>
-          <span class='text-[#E11E2C] text-[14px] leading-[20px]'>[02]</span>
+        <div class='pb-[32px] md:pb-[4px]'>
+          <span class='text-[#E11E2C] text-[14px] leading-[20px] font-light'>
+            [02]
+          </span>
           <div class=''>
-            <h3 class='text-[32px] my-[20px] leading-none'>Соединяем</h3>
-            <p class='text-[24px] leading-[29px]'>
+            <h3
+              class='text-[24px] md:text-[32px] leading-none my-[10px] md:my-[20px]'
+            >
+              Соединяем
+            </h3>
+            <p class='text-[20px] md:text-[24px] md:leading-[1.2]'>
               единомышленников и помогаем находить людей к себе в команду
             </p>
           </div>
         </div>
-        <div class='pb-[4px]'>
-          <span class='text-[#E11E2C] text-[14px]'>[03]</span>
+        <div class='pb-[32px] md:pb-[4px]'>
+          <span class='text-[#E11E2C] text-[14px] leading-[20px] font-light'>
+            [03]
+          </span>
           <div class=''>
-            <h3 class='text-[32px] my-[20px] leading-none'>Находим</h3>
-            <p class='text-[24px] leading-[29px]'>
+            <h3
+              class='text-[24px] md:text-[32px] leading-none my-[10px] md:my-[20px]'
+            >
+              Находим
+            </h3>
+            <p class='text-[20px] md:text-[24px] md:leading-[1.2]'>
               работу в интересных проектах
             </p>
           </div>
         </div>
-        <div class='pb-[4px]'>
-          <span class='text-[#E11E2C] text-[14px]'>[04]</span>
+        <div class='pb-[32px] md:pb-[4px]'>
+          <span class='text-[#E11E2C] text-[14px] leading-[20px] font-light'>
+            [04]
+          </span>
           <div class=''>
-            <h3 class='text-[32px] my-[20px] leading-none'>Рассказываем</h3>
-            <p class='text-[24px] leading-[29px]'>структурированно и удобно</p>
+            <h3
+              class='text-[24px] md:text-[32px] leading-none my-[10px] md:my-[20px]'
+            >
+              Рассказываем
+            </h3>
+            <p class='text-[20px] md:text-[24px] md:leading-[1.2]'>
+              структурированно и удобно
+            </p>
           </div>
         </div>
       </div>
@@ -250,58 +274,58 @@ import '../index.css'
 
     <!-- screen with full width -->
     <div
-      class='flex mt-[203px] mb-[200px] gap-[32px] overflow-hidden place-content-center'
+      class='flex flex-wrap gap-[20px] md:flex-nowrap mt-[100px] md:mt-[203px] mb-[100px] md:mb-[200px] md:gap-[32px] overflow-hidden place-content-center'
     >
       <img
         src='/homepage/Photo-0.png'
-        class='h-[200px] sm:h-[240px] md-[300px] lg:h-[340px] xl:h-[440px]'
+        class='h-[160px] sm:h-[240px] md-[300px] lg:h-[340px] xl:h-[440px]'
       />
       <img
         src='/homepage/Photo-3.png'
-        class='h-[200px] sm:h-[240px] md-[300px] lg:h-[340px] xl:h-[440px]'
+        class='h-[160px] sm:h-[240px] md-[300px] lg:h-[340px] xl:h-[440px]'
       />
       <img
         src='/homepage/Photo-4.png'
-        class='h-[200px] sm:h-[240px] md-[300px] lg:h-[340px] xl:h-[440px]'
+        class='h-[160px] sm:h-[240px] md-[300px] lg:h-[340px] xl:h-[440px]'
       />
       <img
         src='/homepage/Photo-5.png'
-        class='h-[200px] sm:h-[240px] md-[300px] lg:h-[340px] xl:h-[440px]'
+        class='h-[160px] sm:h-[240px] md-[300px] lg:h-[340px] xl:h-[440px]'
       />
     </div>
 
     <!-- screen -->
     <div class='container mx-auto'>
       <div>
-        <h2 class='text-[80px] inline-block mr-8 leading-none'>
-          Кто уже с нами
-        </h2>
-        <span class='text-[32px]'> /кома́нда/</span>
+        <h2 class='inline-block mr-8'>Кто уже с нами</h2>
+        <span class='text-[32px] inline-block'> /кома́нда/</span>
       </div>
 
-      <div class='flex justify-between content-center pt-[32px] pb-[34px]'>
+      <div
+        class='flex flex-wrap md:flex-nowrap justify-between gap-[24px] md:gap-[32px] overflow-hidden content-center pt-24px md:pt-[32px] pb-[34px]'
+      >
         <img
-          class='w-[164px] inline-block'
+          class='w-[128px] md:w-[164px] inline-block'
           src='/homepage/Houmly.svg'
         />
         <img
-          class='w-[164px] inline-block'
+          class='w-[128px] md:w-[164px] inline-block'
           src='/homepage/Skich.svg'
         />
         <img
-          class='w-[164px] inline-block'
+          class='w-[128px] md:w-[164px] inline-block'
           src='/homepage/scoot-api.svg'
         />
         <img
-          class='w-[164px] inline-block'
+          class='w-[128px] md:w-[164px] inline-block'
           src='/homepage/weatherwell_symbol.svg'
         />
         <img
-          class='w-[164px] inline-block'
+          class='w-[128px] md:w-[164px] inline-block'
           src='/homepage/Lingvanex-Translator.svg'
         />
         <img
-          class='w-[164px] inline-block'
+          class='w-[128px] md:w-[164px] inline-block'
           src='/homepage/LOGO x dark background.svg'
         />
       </div>
@@ -317,12 +341,16 @@ import '../index.css'
 
       <!-- footer -->
 
-      <div class='mt-[274px] flex justify-between items-center'>
-        <img
-          class='h-[80px] inline-block'
-          src='/homepage/uhub-logo.png'
-        />
-        <div class='flex gap-32px items-center'>
+      <div
+        class='mt-[160px] md:mt-[274px] sm:flex flex-wrap md:flex-nowrap justify-between items-center'
+      >
+        <div class='text-center'>
+          <img
+            class='w-[100px] mb-[24px] md:mb-0 md:w-[80px] inline-block'
+            src='/homepage/uhub-logo.png'
+          />
+        </div>
+        <div class='flex flex-wrap lg:flex-nowrap gap-32px items-center'>
           <a
             class='link grow width-[100%]'
             href='/'
@@ -369,7 +397,7 @@ import '../index.css'
             >ивенты</a
           >
         </div>
-        <div>
+        <div class='text-center pt-[24px] md:pt-0'>
           <a
             class='link grow width-[100%]'
             href='/'
@@ -382,7 +410,9 @@ import '../index.css'
           >
         </div>
       </div>
-      <div class='text-center mt-[5px] mb-[33px] fonx-[18px] opacity-50'>
+      <div
+        class='text-center mt-[20px] md:mt-[5px] mb-[33px] fonx-[18px] opacity-50'
+      >
         ©Copyright 2022
       </div>
     </div>
