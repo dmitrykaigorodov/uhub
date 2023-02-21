@@ -15,7 +15,7 @@
     text-transform: uppercase;
   }
   h2 {
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -1px;
     @apply text-[36px] xs:text-[48px] sm:text-[64px] md:text-[80px] leading-none
   }
